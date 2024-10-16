@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Cambiado para mejor distribución */
+    align-items: center;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    position: relative;
+    z-index: 10; 
+    padding: 0 1rem;
+}
+
+.navbar-logo img {
+    height: 7vh; 
+    margin-left: 3.5vw;
+    min-height: 50px;
+    min-width: 85px;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 1rem;
+}
+
+.nav-link {
+    color: #000000;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    white-space: nowrap;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}
+
+.navbar-buttons {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 1rem;
+    padding: 1rem; 
+}
+
+
+.btnLogin {
+    width: 10vw;
+    height: 4vh;
+    min-height: 30px;
+    min-width: 80px;
+    max-width: 200px;
+    max-height: 1px;
+    border: none;
+    color: #323363; 
+    background-color: white;
+    border-radius: 7px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.btnLogin::after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 7px;
+    background: linear-gradient(-145.587deg, #E4598F 0%, #A773A8 14%, #549ECE 30%, #06C7F1 48%, #30DF99 65%, #56EE58 82%, #E9E531 100%);
+    z-index: -1;
+}
+
+.btnLogin:hover {
+    
+}
+
+.btnRegister {
+    width: 10vw;
+    height: 4vh;
+    min-height: 30px;
+    min-width: 80px;
+    max-width: 200px;
+    max-height: 1px;
+    border: none;
+    color: #EEEEEE; 
+    background-color: #101623;
+    border-radius: 7px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.btnRegister::after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 7px;
+    background: linear-gradient(-145.587deg, #E4598F 0%, #A773A8 14%, #549ECE 30%, #06C7F1 48%, #30DF99 65%, #56EE58 82%, #E9E531 100%);
+    z-index: -1;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: auto; 
+    padding: 0.5rem;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    max-width: 400px;
+    height: 100vh;
+    background: white;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobile-menu.active {
+    right: 0;
+  }
+  
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .mobile-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .mobile-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .mobile-menu-list li {
+    margin: 15px 0;
+  }
+  
+  .mobile-menu-list .nav-link {
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+  }
+  
+  .mobile-menu-buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .mobile-menu-buttons .btnLogin,
+  .mobile-menu-buttons .btnRegister {
+    width: 100%;
+    max-width: none;
+  }
+  
+  @media (max-width: 900px) {
+    .desktop-menu,
+    .desktop-buttons {
+      display: none;
+    }
+    
+    .menu-icon {
+      display: block;
+    }
+  }
