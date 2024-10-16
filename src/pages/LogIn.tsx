@@ -1,7 +1,12 @@
+import NavBar from "@/components/NavBar";
+
 function LogIn() {
-    return (
-        <h1>Log In</h1>
-    )
-  }
-  
+  return (
+    <>
+      <NavBar />
+      <h1>Log In</h1>
+    </>
+  );
+}
+
 export default LogIn;

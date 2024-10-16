@@ -1,7 +1,12 @@
+import NavBar from "@/components/NavBar";
+
 function WhoWeAre() {
-    return (
-        <h1>Who We Are</h1>
-    )
-  }
-  
+  return (
+    <>
+      <NavBar />
+      <h1>Who We Are</h1>
+    </>
+  );
+}
+
 export default WhoWeAre;
