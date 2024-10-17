@@ -3,10 +3,9 @@
 
 .navbar {
   display: grid;
-  grid-template-columns: 200px 1fr 250px;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   background-color: #ffffff;
-  border-bottom: 1px solid rgb(192, 192, 192);
   position: relative;
   z-index: 10;
   padding: 0 2rem;
@@ -17,6 +16,7 @@
   height: 7vh;
   min-height: 50px;
   min-width: 85px;
+  max-width: 150px;
 }
 
 .navbar-list {
@@ -25,6 +25,7 @@
   justify-content: center;
   gap: clamp(2rem, 4vw, 5rem);
   padding: 1rem;
+  flex: 1;
 }
 
 .nav-link {
