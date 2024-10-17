@@ -7,7 +7,6 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import Login from "./pages/LogIn";
 import Register from "./pages/Register";
-import NavBar from "./components/NavBar";
 
 function App() {
   return (

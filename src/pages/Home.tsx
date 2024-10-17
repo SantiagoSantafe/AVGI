@@ -1,10 +1,14 @@
+import { useState } from "react";
 import NavBar from "@/components/NavBar";
+import "../styles/Home.css";
+import GetKnownAVGI from "@/components/GetKnownAVGI";
 
 function Home() {
   return (
     <>
       <NavBar />
-      <h1>Home Page</h1>
+      <GetKnownAVGI />
+      <h1>Home</h1>
     </>
   );
 }
