@@ -2,6 +2,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useState, useEffect } from "react";
+import "../styles/NavBar.css";
 
 function NavBar() {
   const location = useLocation();
