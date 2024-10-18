@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import GetKnownAVGI from "@/components/GetKnownAVGI";
 import WIsAVGI from "@/components/WIsAVGI";
 import WhoMakesAVGI from "@/components/WhoMakesAVGI";
+import Numbers from "@/components/Numbers";
 
 function Home() {
   return (
@@ -11,7 +12,8 @@ function Home() {
       <GetKnownAVGI />
       <WIsAVGI/>
       <WhoMakesAVGI />
-      <h1>Numbers</h1>
+      <Numbers />
+      <h1>Metricas</h1>
     </>
   );
 }
