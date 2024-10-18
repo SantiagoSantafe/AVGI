@@ -13,9 +13,9 @@
 }
 
 .navbar-logo img {
-  height: 7vh;
-  min-height: 50px;
-  min-width: 85px;
+  height: auto;
+  width: auto;
+  min-width: 150px;
   max-width: 150px;
 }
 

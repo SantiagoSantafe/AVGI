@@ -4,16 +4,18 @@ import GetKnownAVGI from "@/components/GetKnownAVGI";
 import WIsAVGI from "@/components/WIsAVGI";
 import WhoMakesAVGI from "@/components/WhoMakesAVGI";
 import Numbers from "@/components/Numbers";
+import Metrics from "@/components/Metrics";
 
 function Home() {
   return (
     <>
       <NavBar />
       <GetKnownAVGI />
-      <WIsAVGI/>
+      <WIsAVGI />
       <WhoMakesAVGI />
       <Numbers />
-      <h1>Metricas</h1>
+      <Metrics />
+      <h1>Services</h1>
     </>
   );
 }

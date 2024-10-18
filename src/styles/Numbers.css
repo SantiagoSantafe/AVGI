@@ -197,7 +197,7 @@
 }
 
 .card-number {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
@@ -215,7 +215,6 @@
   z-index: 2;
 }
 
-/* Estilos de animación */
 .animate-element {
   opacity: 0;
   transform: translateY(20px);
