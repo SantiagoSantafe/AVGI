@@ -1,9 +1,31 @@
-.page-container {
+.get-known-AVGI {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(192, 192, 192);
+  border-top: 1px solid rgb(192, 192, 192);
+  border-bottom: 1px solid rgb(192, 192, 192);
 }
+
+.transition-text {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 15vw;
+  font-weight: 700;
+  font-family: "Urbanist", sans-serif;
+  white-space: nowrap;
+}
+.transition-text.fade {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
 
 .main-container {
   flex: 1;
@@ -11,7 +33,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  transition: background-image 0.3s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .main-container.last-frame {
@@ -19,10 +41,10 @@
   background-size: cover;
   background-position: center;
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fadeInGetKnown 1s forwards;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInGetKnown {
   to {
     opacity: 1;
   }
@@ -51,6 +73,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 .transition-image.fade {
   opacity: 0;
@@ -173,7 +196,7 @@
     animation: none;
   }
 
-  .page-container {
+  .get-known-AVGI {
     min-height: 50vh;
   }
 }
