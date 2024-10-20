@@ -1,0 +1,137 @@
+.our-work {
+  min-height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f353c;
+  margin-top: 4rem;
+}
+
+.our-work-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
+.our-work-title {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: start;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 700;
+  font-family: "Urbanist", sans-serif;
+  color: white;
+  align-self: end;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+
+.gradient-text-our-work {
+  font-weight: 700;
+  background: linear-gradient(145.587deg, #e9e531 0%, #56ee58 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.our-work-description {
+  grid-column: 1;
+  grid-row: 2;
+  text-align: start;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 400;
+  font-family: "Urbanist", sans-serif;
+  color: white;
+  align-self: start;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  letter-spacing: -0.02em;
+}
+
+.our-work-description2 {
+  grid-column: 1;
+  grid-row: 3;
+  text-align: start;
+  font-size: 1.2vw;
+  font-weight: 400;
+  font-family: "Urbanist", sans-serif;
+  color: white;
+  align-self: start;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+.our-work-images {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  margin-right: 5rem;
+}
+
+.our-work-description-mobile {
+    display: none;
+  }
+
+@media (max-width: 1000px) {
+  .our-work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .our-work-title {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+    margin: 1rem;
+    font-size: clamp(3rem, 4vw, 2rem);
+  }
+
+  .our-work-description {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: left;
+    margin: 0 1.5rem;
+    font-size: clamp(1.8rem, 4vw, 2rem);
+    font-weight: 600;
+    letter-spacing: 0em;
+  }
+
+  .our-work-description2 {
+    display: none;
+  }
+
+  .our-work-description-mobile {
+    color: white;
+    display: block;
+    grid-row: 3;
+    text-align: left;
+    margin: 0 1.5rem;
+    font-size: clamp(1rem, 4vw, 2rem);
+    font-weight: 300;
+    letter-spacing: 0em;
+  }
+
+  .our-work-images {
+    grid-row: 4;
+    grid-column: 1;
+    min-height: 50vh; 
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: none;
+    border-right: none;
+  }
+
+  .our-work {
+    margin-top: 2rem; 
+    min-height: auto; 
+  }
+}
