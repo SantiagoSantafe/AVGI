@@ -6,6 +6,7 @@ import WhoMakesAVGI from "@/components/WhoMakesAVGI";
 import Numbers from "@/components/Numbers";
 import Metrics from "@/components/Metrics";
 import Services from "@/components/Services";
+import OurWork from "@/components/OurWork";
 
 function Home() {
   return (
@@ -17,7 +18,8 @@ function Home() {
       <Numbers />
       <Metrics />
       <Services />
-      <h1>Our WORK</h1>
+      <OurWork />
+      <h1>Testimonios</h1>
     </>
   );
 }
