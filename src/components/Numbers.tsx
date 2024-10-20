@@ -35,7 +35,7 @@ function Numbers() {
   }, []);
 
   return (
-    <div className="numbers-container">
+    <div className="numbers">
       <div className="numbers-grid">
         <div
           className="numbers-title animate-element"
@@ -117,8 +117,8 @@ function Numbers() {
           ref={(el) => (elementsRef.current[5] = el)}
         >
           Our balanced combination of{" "}
-          <span className="gradient-text">Experience Innovation</span> and{" "}
-          <span className="gradient-text">Productivity</span> is what has
+          <span className="gradient-text">Experience, Innovation</span> and{" "}
+          <span className="gradient-text-productivity">Productivity</span> is what has
           allowed us to make a real difference in every project we undertake.
         </div>
       </div>

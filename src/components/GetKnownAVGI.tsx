@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../styles/GetKnown.css";
+import "../styles/GetKnownAVGI.css";
 import avgiGroup from "/AVGI GROUP.png";
 import bigLogo from "/Big Logo.png";
 import reducedLogo from "/Reduced Logo.png";
@@ -62,7 +62,7 @@ function GetKnownAVGI() {
   };
 
   return (
-    <div className="page-container">
+    <div className="get-known-AVGI">
       <div className={`main-container ${isFourthLayout ? "last-frame" : ""}`}>
         <div className="image-container">
           {isFourthLayout ? (

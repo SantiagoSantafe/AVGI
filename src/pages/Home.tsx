@@ -5,6 +5,7 @@ import WIsAVGI from "@/components/WIsAVGI";
 import WhoMakesAVGI from "@/components/WhoMakesAVGI";
 import Numbers from "@/components/Numbers";
 import Metrics from "@/components/Metrics";
+import Services from "@/components/Services";
 
 function Home() {
   return (
@@ -15,7 +16,8 @@ function Home() {
       <WhoMakesAVGI />
       <Numbers />
       <Metrics />
-      <h1>Services</h1>
+      <Services />
+      <h1>Our WORK</h1>
     </>
   );
 }

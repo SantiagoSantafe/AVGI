@@ -2,7 +2,7 @@ import "../styles/Metrics.css";
 
 function Metrics() {
   return (
-    <div className="grid-container-metrics">
+    <div className="metrics">
       <div className="card-connector-metrics1"></div>
       <div className="cardMetrics grid-item-1">
         We successfully transform 100% of our client's business operations and

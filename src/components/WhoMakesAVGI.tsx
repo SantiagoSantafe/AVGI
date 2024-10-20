@@ -63,7 +63,7 @@ function WhoMakesAVGI(): JSX.Element {
 
   return (
     <>
-      <div className="who-makes-container">
+      <div className="who-makes-up-AVGI">
         <div className="who-makes-grid">
           <div className="grid-title">
             Who makes up <span className="gradient-text">AVGI</span>?
@@ -147,8 +147,9 @@ function WhoMakesAVGI(): JSX.Element {
             />
           </div>
         </div>
+        <div className="linea2"></div>
       </div>
-      <div className="linea"></div>
+      
     </>
   );
 }

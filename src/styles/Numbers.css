@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
-.numbers-container {
+.numbers {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 
 .numbers-grid {
@@ -22,16 +22,25 @@
 
 .numbers-desc {
   grid-column: 1 / -1;
-  text-align: center;
+  text-align: justify;
   font-size: clamp(1.2rem, 4vw, 2rem);
   font-weight: 400;
   margin-top: 1rem;
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
-  margin-bottom: 1rem;
-  padding: 0 1rem;
 }
 
+.gradient-text-productivity {
+  font-weight: 600;
+  background: linear-gradient(
+    -145.587deg,
+    #549ece 0%,
+    #a773a8 48%,
+    #e4598f 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .numbers-title {
   grid-column: 1 / -1;
   text-align: center;
@@ -254,8 +263,11 @@
 @media (max-width: 550px) {
   .numbers-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom: 0rem;
   }
+
   .card-number {
+    font-size: 2rem;
     grid-column: 1;
     grid-row: 1;
     margin-left: 5vw;
@@ -266,16 +278,20 @@
     grid-row: 1;
     text-align: start;
     font-weight: 600;
-    font-size: 1.2rem;
-    margin: 0.5rem 0.5rem;
+    font-size: 1.1rem;
+    margin: 0.5rem;
     align-self: center;
+    padding-left: 0.5rem;
+    
   }
 
   .card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 1fr 1fr;
     max-height: 5vh;
+    min-width: unset;
+    width: 100%;
     padding: 1rem 1rem 2rem 1rem;
   }
 
