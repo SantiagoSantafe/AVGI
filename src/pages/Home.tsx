@@ -7,6 +7,7 @@ import Numbers from "@/components/Numbers";
 import Metrics from "@/components/Metrics";
 import Services from "@/components/Services";
 import OurWork from "@/components/OurWork";
+import Testimonies from "@/components/Testimonies";
 
 function Home() {
   return (
@@ -19,7 +20,8 @@ function Home() {
       <Metrics />
       <Services />
       <OurWork />
-      <h1>Testimonios</h1>
+      <Testimonies />
+      <h1>CTA</h1>
     </>
   );
 }

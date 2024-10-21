@@ -147,7 +147,7 @@ function WhoMakesAVGI(): JSX.Element {
             />
           </div>
         </div>
-        <div className="linea2"></div>
+        <div className="linea"></div>
       </div>
       
     </>

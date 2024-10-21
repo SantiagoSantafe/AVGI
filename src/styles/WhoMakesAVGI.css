@@ -52,12 +52,6 @@
   filter: grayscale(0%);
 }
 
-.linea2 {
-  width: 80vw;
-  border-bottom: 2px solid black;
-  margin-top: 2rem;
-}
-
 .gradient-text {
   font-weight: 600;
   background: linear-gradient(

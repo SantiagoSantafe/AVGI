@@ -175,10 +175,11 @@
   border-radius: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .services {
     padding: 1rem;
   }
+
 
   .services-grid {
     display: grid;
@@ -224,6 +225,7 @@
   .cardS {
     position: relative;
     max-height: 250px;
+    max-width: 500px;
     transition: all 0.3s ease-in-out;
   }
 
@@ -297,7 +299,5 @@
     text-align: justify;
   }
 
-  .services-detailed {
-    display: none;
-  }
+  
 }
