@@ -1,5 +1,5 @@
-import NavBar from "@/components/NavBar";
 import "../styles/Home.css";
+import NavBar from "@/components/NavBar";
 import GetKnownAVGI from "@/components/GetKnownAVGI";
 import WIsAVGI from "@/components/WIsAVGI";
 import WhoMakesAVGI from "@/components/WhoMakesAVGI";
@@ -8,6 +8,7 @@ import Metrics from "@/components/Metrics";
 import Services from "@/components/Services";
 import OurWork from "@/components/OurWork";
 import Testimonies from "@/components/Testimonies";
+import CTA from "@/components/CTA";
 
 function Home() {
   return (
@@ -21,7 +22,8 @@ function Home() {
       <Services />
       <OurWork />
       <Testimonies />
-      <h1>CTA</h1>
+      <CTA />
+      <h1>Footer</h1>
     </>
   );
 }
