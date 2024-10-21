@@ -1,0 +1,104 @@
+.CTA {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.CTA.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.CTA-content {
+  position: relative;
+  z-index: 1;
+}
+
+.CTA-title {
+  font-size: clamp(4rem, 5vw, 2.8rem);
+  font-weight: 500;
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  margin-top: 8rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.gradient-text-CTA {
+  font-weight: 700;
+  background: linear-gradient(
+    145.587deg,
+    #549ece 0%,
+    #a773a8 50%,
+    #e4598f 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.CTA-description {
+  font-size: clamp(1rem, 4vw, 2rem);
+  font-weight: 500;
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  margin-top: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 8rem;
+}
+
+.contact-link{
+    text-decoration: underline;
+}
+
+.trail-point {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(145.587deg, #e9e531 0%, #56ee58 100%);
+  pointer-events: none;
+  filter: blur(30px);
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media (max-width: 800px) {
+  .CTA-title {
+    min-height: 200px;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 700;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 0rem;
+  }
+
+  .CTA-description {
+    font-size: clamp(1rem, 4vw, 2rem);
+    font-weight: 500;
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+  }
+}
