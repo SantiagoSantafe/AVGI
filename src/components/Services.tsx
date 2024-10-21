@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/Services.css";
 
 interface ServiceData {
@@ -39,8 +39,22 @@ function Services(): JSX.Element {
     },
   ];
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1200 && selectedCard !== null) {
+        setIsDetailedVisible(false);
+        setSelectedCard(null);
+        setIsGridVisible(true);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+        return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [selectedCard]);
+
   const handleCardClick = async (id: number): Promise<void> => {
-    if (window.innerWidth <= 800) {
+    if (window.innerWidth <= 1200) {
       if (expandedMobileCard === id) {
         setIsCollapsing(true);
         setTimeout(() => {
@@ -65,6 +79,8 @@ function Services(): JSX.Element {
     setSelectedCard(null);
     setIsGridVisible(true);
   };
+
+  
 
   return (
     <div className="services">
