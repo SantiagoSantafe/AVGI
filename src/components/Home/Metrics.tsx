@@ -1,4 +1,4 @@
-import "../styles/Metrics.css";
+import "../../styles/Home/Metrics.css";
 
 function Metrics() {
   return (

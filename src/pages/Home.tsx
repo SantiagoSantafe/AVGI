@@ -1,14 +1,14 @@
-import "../styles/Home.css";
-import NavBar from "@/components/NavBar";
-import GetKnownAVGI from "@/components/GetKnownAVGI";
-import WIsAVGI from "@/components/WIsAVGI";
-import WhoMakesAVGI from "@/components/WhoMakesAVGI";
-import Numbers from "@/components/Numbers";
-import Metrics from "@/components/Metrics";
-import Services from "@/components/Services";
-import OurWork from "@/components/OurWork";
-import Testimonies from "@/components/Testimonies";
-import CTA from "@/components/CTA";
+import NavBar from "@/components/Home/NavBar";
+import GetKnownAVGI from "@/components/Home/GetKnownAVGI";
+import WIsAVGI from "@/components/Home/WIsAVGI";
+import WhoMakesAVGI from "@/components/Home/WhoMakesAVGI";
+import Numbers from "@/components/Home/Numbers";
+import Metrics from "@/components/Home/Metrics";
+import Services from "@/components/Home/Services";
+import OurWork from "@/components/Home/OurWork";
+import Testimonies from "@/components/Home/Testimonies";
+import CTA from "@/components/Home/CTA";
+import Footer from "@/components/Home/Footer";
 
 function Home() {
   return (
@@ -23,7 +23,7 @@ function Home() {
       <OurWork />
       <Testimonies />
       <CTA />
-      <h1>Footer</h1>
+      <Footer />
     </>
   );
 }

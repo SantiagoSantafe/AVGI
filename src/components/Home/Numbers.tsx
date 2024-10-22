@@ -1,4 +1,4 @@
-import "../styles/Numbers.css";
+import "../../styles/Home/Numbers.css";
 import { useEffect, useRef } from "react";
 
 function Numbers() {

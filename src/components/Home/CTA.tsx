@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import "../styles/CTA.css";
+import "../../styles/Home/CTA.css";
 
 interface TrailPoint {
   x: number;

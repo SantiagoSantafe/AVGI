@@ -1,4 +1,4 @@
-import "../styles/WIsAVGI.css";
+import "../../styles/Home/WIsAVGI.css";
 
 function WIsAVGI() {
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/WhoMakesAVGI.css";
+import "../../styles/Home/WhoMakesAVGI.css";
 
 type ContentKey =
   | "default"

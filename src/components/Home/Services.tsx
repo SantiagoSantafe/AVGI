@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../styles/Services.css";
+import "../../styles/Home/Services.css";
 
 interface ServiceData {
   id: number;
