@@ -2,7 +2,6 @@
   min-height: 90vh;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid rgb(192, 192, 192);
   border-bottom: 1px solid rgb(192, 192, 192);
 }
 

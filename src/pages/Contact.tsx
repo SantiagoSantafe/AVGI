@@ -1,11 +1,12 @@
 import NavBar from "@/components/Home/NavBar";
 import Footer from "@/components/Home/Footer";
+import WorkinkgOn from "@/components/Home/WorkingOn";
 
 function Contact() {
   return (
     <>
       <NavBar />
-      <h1>Contact</h1>
+      <WorkinkgOn />
       <Footer />
     </>
   );

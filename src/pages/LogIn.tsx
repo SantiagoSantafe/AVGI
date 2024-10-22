@@ -1,10 +1,11 @@
 import NavBar from "@/components/Home/NavBar";
+import WorkinkgOn from "@/components/Home/WorkingOn";
 
 function LogIn() {
   return (
     <>
       <NavBar />
-      <h1>Log In</h1>
+      <WorkinkgOn />
     </>
   );
 }

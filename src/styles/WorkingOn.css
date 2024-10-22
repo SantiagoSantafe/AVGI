@@ -1,0 +1,55 @@
+.working-on {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.workingon-logo {
+    height: auto;
+    width: 50vh;
+    margin-bottom: 20px;
+}
+
+.workingon-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.workingon-desc {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.workingon-desc2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.workingon-text {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.workingon-decorated-text {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.workingon-decorated-text:hover {
+    text-decoration: underline;
+}
+
+.info, .contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
