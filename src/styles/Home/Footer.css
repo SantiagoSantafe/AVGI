@@ -136,15 +136,17 @@
   gap: 1rem;
 }
 
-.nav-link {
+.nav-link-footer {
   color: #4a5568;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 0.95rem;
+  transition: font-size 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-link-footer:hover {
   color: #2d3748;
+  font-size: 1rem;
 }
 
 @media (max-width: 800px) {
