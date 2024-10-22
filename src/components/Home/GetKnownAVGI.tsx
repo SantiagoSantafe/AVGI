@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../styles/GetKnownAVGI.css";
+import "../../styles/Home/GetKnownAVGI.css";
 import avgiGroup from "/AVGI GROUP.png";
 import bigLogo from "/Big Logo.png";
 import reducedLogo from "/Reduced Logo.png";

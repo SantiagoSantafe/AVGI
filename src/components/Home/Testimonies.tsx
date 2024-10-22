@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/Testimonies.css";
+import "../../styles/Home/Testimonies.css";
 
 interface Testimony {
   id: number;

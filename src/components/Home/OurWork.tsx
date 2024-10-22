@@ -1,4 +1,4 @@
-import "../styles/OurWork.css";
+import "../../styles/Home/OurWork.css";
 
 function OurWork() {
   return (
