@@ -56,19 +56,19 @@ const Footer = () => {
         <div className="footer-section">
           <h3 className="section-title">Explore</h3>
           <div className="nav-links">
-            <Link to="/" className="nav-link">
+            <Link to="/" className="nav-link-footer">
               Home
             </Link>
-            <Link to="/whoweare" className="nav-link">
+            <Link to="/whoweare" className="nav-link-footer">
               Who we are
             </Link>
-            <Link to="/pricing" className="nav-link">
+            <Link to="/pricing" className="nav-link-footer">
               Pricing
             </Link>
-            <Link to="/contact" className="nav-link">
+            <Link to="/contact" className="nav-link-footer">
               Contact
             </Link>
-            <Link to="/login" className="nav-link">
+            <Link to="/login" className="nav-link-footer">
               Courses
             </Link>
           </div>
@@ -80,25 +80,25 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/"
               target="_blank"
-              className="nav-link"
+              className="nav-link-footer"
             >
               Facebook
             </a>
             <a
               href="https://www.instagram.com/"
               target="_blank"
-              className="nav-link"
+              className="nav-link-footer"
             >
               Instagram
             </a>
             <a
               href="https://www.linkedin.com/"
               target="_blank"
-              className="nav-link"
+              className="nav-link-footer"
             >
               LinkedIn
             </a>
-            <a href="https://www.x.com/" target="_blank" className="nav-link">
+            <a href="https://www.x.com/" target="_blank" className="nav-link-footer">
               Twitter - X
             </a>
           </div>
