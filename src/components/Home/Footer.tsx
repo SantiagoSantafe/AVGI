@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
+    <>
+    <div className="linea-footer-navbar"></div>
     <footer className="footer">
       <div className="footer-container">
         <div className="logo-section">
@@ -124,6 +126,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 

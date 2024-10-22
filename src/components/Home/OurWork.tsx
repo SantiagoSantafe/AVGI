@@ -1,4 +1,32 @@
 import "../../styles/Home/OurWork.css";
+import Carrusel from "../../components/Home/Work-carousel.tsx";
+
+const images = {
+  leftBand: [
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+  ],
+  centerBand: [
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+  ],
+  rightBand: [
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+    '/Rectangle prueba.png',
+  ]
+};
 
 function OurWork() {
   return (
@@ -17,7 +45,7 @@ function OurWork() {
         <div className="our-work-description-mobile">
           Swipe to see more
         </div>
-        <div className="our-work-images">{/* Aquí va la imagen */}</div>
+        <div className="our-work-images"><Carrusel images={images}/></div>
       </div>
     </div>
   );
