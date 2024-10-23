@@ -81,27 +81,6 @@
   position: absolute;
 }
 
-.avatar-button.active::after {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  background: linear-gradient(
-    -145.587deg,
-    #e4598f 0%,
-    #a773a8 14%,
-    #549ece 30%,
-    #06c7f1 48%,
-    #30df99 65%,
-    #56ee58 82%,
-    #e9e531 100%
-  );
-  border-radius: 100%;
-  z-index: -1; 
-}
-
 .avatar-image {
   width: 48px;
   height: 48px;
