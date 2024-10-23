@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../../styles/Home/Testimonies.css";
+import { useOnScreen } from "../UseOnScreen";
 
 interface Testimony {
   id: number;
@@ -60,9 +61,15 @@ const testimonials: Testimony[] = [
 
 export default function Testimonials() {
   const [currentTestimonial, setCurrentTestimonial] = useState<number>(0);
+  const { ref, isIntersecting } = useOnScreen({ threshold: 0.1 });
 
   return (
-    <div className="testimonials-container">
+    <div className="testimonials-container" ref={ref}
+    style={{
+      opacity: isIntersecting ? 1 : 0,
+      transform: isIntersecting ? "translateY(0)" : "translateY(20px)",
+      transition: "all 0.7s ease-in",
+    }}>
       <div className="testimonial-content">
         <img
           src={testimonials[currentTestimonial].avatar}

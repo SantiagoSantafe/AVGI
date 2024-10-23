@@ -1,0 +1,41 @@
+.purpose {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.purpose-text,
+.purpose-text2 {
+  font-size: 1.5rem;
+  font-family: "Urbanist", sans-serif;
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+
+.animate-element-purpose {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-element-purpose.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 800px) {
+  .purpose-text,
+  .purpose-text2 {
+    text-align: justify;
+    font-size: 1.4rem;
+    font-family: "Urbanist", sans-serif;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  .purpose-text{
+    margin-top: 2rem;
+  }
+}
