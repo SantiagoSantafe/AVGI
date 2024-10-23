@@ -1,5 +1,5 @@
 import NavBar from "@/components/Home/NavBar";
-import WorkinkgOn from "@/components/Home/WorkingOn";
+import WorkinkgOn from "@/components/WorkingOn";
 
 function LogIn() {
   return (

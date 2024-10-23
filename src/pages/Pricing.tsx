@@ -1,6 +1,6 @@
 import NavBar from "@/components/Home/NavBar";
 import Footer from "@/components/Home/Footer";
-import WorkinkgOn from "@/components/Home/WorkingOn";
+import WorkinkgOn from "@/components/WorkingOn";
 
 function Pricing() {
   return (

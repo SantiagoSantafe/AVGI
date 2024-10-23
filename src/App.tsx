@@ -6,10 +6,12 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import Login from "./pages/LogIn";
 import Register from "./pages/Register";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/whoweare" element={<WhoWeAre />} />

@@ -1,0 +1,24 @@
+.phrase {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.phrase-img-mobile{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .phrase-img{
+        display: none;
+    }
+    .phrase-img-mobile{
+        margin-top: 2rem;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}

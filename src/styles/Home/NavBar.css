@@ -6,8 +6,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   background-color: #ffffff;
-  position: relative;
+  position: fixed;
   z-index: 10;
+  height: 80px;
   padding: 0 2rem;
   overflow: hidden;
 }
@@ -34,9 +35,9 @@
   font-optical-sizing: auto;
   white-space: nowrap;
   display: inline-block;
-  padding: 0.25rem 0.5rem; 
+  padding: 0.25rem 0.5rem;
   text-overflow: ellipsis;
-  max-width: 200px; 
+  max-width: 200px;
   overflow: hidden;
 }
 
@@ -113,9 +114,9 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 40%; 
-  min-height: 100dvh; 
-  height: 100%; 
+  width: 40%;
+  min-height: 100dvh;
+  height: 100%;
   background: white;
   z-index: 1000;
   transition: right 0.3s ease-in-out;
@@ -123,9 +124,8 @@
   display: flex;
   flex-direction: column;
   padding-right: 20px;
-  padding-left: 20px;  
+  padding-left: 20px;
   padding-bottom: calc(env(safe-area-inset-bottom) + 40px);
-  
 }
 
 .mobile-menu.active {
@@ -187,14 +187,13 @@
   .mobile-menu {
     height: -webkit-fill-available;
   }
-  
+
   .mobile-menu-buttons {
     position: sticky;
     bottom: 0;
     padding-bottom: max(20px, env(safe-area-inset-bottom));
   }
 }
-
 
 .mobile-menu-buttons {
   margin-top: auto;
@@ -212,7 +211,12 @@
   max-width: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+  .navbar {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+  }
   .mobile-menu {
     display: flex;
     flex-direction: column;
